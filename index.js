@@ -13,7 +13,7 @@ function currentLine(katzDeliLineArray){
   for (var i=0;i<=katzDeliLineArray.length-1;i++){
     if (i>0) outString = outString + ',';
     if (i===0) {
-      outString=`${i+1}. ${katzDeliLineArray[i]}`;
+      outString=`The line is currently: ${i+1}. ${katzDeliLineArray[i]}`;
     } else {
       outString=`${outString} ${i+1}. ${katzDeliLineArray[i]}`;
     }
