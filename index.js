@@ -25,4 +25,4 @@ var katzDeli = [];
 
 console.log(takeANumber(katzDeli,"Joe Blow"));
 console.log(takeANumber(katzDeli,"Joe Blow2"));
-console.log(JSON.stringify(katzDeli);
+console.log(JSON.stringify(katzDeli));
