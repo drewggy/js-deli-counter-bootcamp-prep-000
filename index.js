@@ -15,10 +15,10 @@ function currentLine(katzDeliLineArray){
   for (var i=0;i<=katzDeliLineArray.length-1;i++){
     console.log(`currentLine - for loop start: ${i}`)
     if (i>0) outString = outString + ',';
-    if (i=0) {
+    if (i===0) {
       console.log(`currentLine - inner if(=0).  Loop: ${i}`)
       outString=`${i+1}. ${katzDeliLineArray[i]}`;
-    }else{
+    } else{
       console.log(`currentLine - inner if(!=0).  Loop: ${i}`)
       outString=`${outString} ${i+1}. ${katzDeliLineArray[i]}`;
     }
