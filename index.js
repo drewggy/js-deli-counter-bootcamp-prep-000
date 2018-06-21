@@ -18,7 +18,7 @@ function currentLine(katzDeliLineArray){
     if (i===0) {
       console.log(`currentLine - inner if(=0).  Loop: ${i}`)
       outString=`${i+1}. ${katzDeliLineArray[i]}`;
-    } else{
+    } else {
       console.log(`currentLine - inner if(!=0).  Loop: ${i}`)
       outString=`${outString} ${i+1}. ${katzDeliLineArray[i]}`;
     }
