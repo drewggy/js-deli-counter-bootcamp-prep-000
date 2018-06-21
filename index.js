@@ -8,13 +8,18 @@ function nowServing(katzDeliLineArray){
   return strOut;
 }
 function currentLine(katzDeliLineArray){
+  console.log("currentLine Reached")
   if (katzDeliLineArray.length < 1) return "The line is currently empty.";
+  console.log("currentLine - after 1st if")
   var outString="";
   for (var i=0;i<=katzDeliLineArray.length-1;i++){
+    console.log(`currentLine - for loop start: ${i}`)
     if (i>0) outString = outString + ',';
     if (i=0) {
+      console.log(`currentLine - inner if(=0).  Loop: ${i}`)
       outString=`${i+1}. ${katzDeliLineArray[i]}`;
     }else{
+      console.log(`currentLine - inner if(!=0).  Loop: ${i}`)
       outString=`${outString} ${i+1}. ${katzDeliLineArray[i]}`;
     }
   }
